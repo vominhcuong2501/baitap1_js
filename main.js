@@ -23,11 +23,11 @@ document.getElementById("btnLuong").onclick = function() {
 // Bài tập 2 
 // + Đầu vào
 // Giả sử có 5 số thực là
-    var a = "nhập số thực 1";
-    var b = "nhập số thực 2";
-    var c = "nhập số thực 3";
-    var d = "nhập số thực 4";
-    var e = "nhập số thực 5";
+    var number1 = "nhập số thực 1";
+    var number2 = "nhập số thực 2";
+    var number3 = "nhập số thực 3";
+    var number4 = "nhập số thực 4";
+    var number5 = "nhập số thực 5";
 // + Xử lý
 // Cộng tất cả lại rồi chia 5
     var trungBinhCong=(a + b + c + d + e)/5
@@ -53,16 +53,16 @@ document.getElementById("tinhTB").onclick = function() {
 // Bài tập 3
 // + Đầu vào
 // 1 USD = 23500 VND
-    var a = 23500;
+    var x = 23500;
 // Giả sử nhập vào 10 USD
 // + Xử lý
-    var tong = 10 * a;
+    var tong = 10 * x;
 // + Đầu ra 
     console.log(tong);
 document.getElementById("soTien").onclick = function() {
     var soTienUSD = document.getElementById("soTienUSD").value*1;
-    var a = 23500;
-    var tienQuyDoi = soTienUSD * a;
+    var x = 23500;
+    var tienQuyDoi = soTienUSD * x;
     console.log("Số tiền quy đổi là "+tienQuyDoi);
     var currentFormat = new Intl.NumberFormat("vn-VN");
     var tienQuyDoi = currentFormat.format(tienQuyDoi);
@@ -72,9 +72,9 @@ document.getElementById("soTien").onclick = function() {
 // Bài tập 4
 // + Đầu vào
 // Giả sử nhập chiêu dài là 4
-    var a = 4;
+    var chieuDai = 4;
 // Giả sử nhập chiêu rộng là 5
-    var b = 5;
+    var chieuRong = 5;
 // + Xử lý
     var chuVi = (a + b)*2;
     var dienTich = a * b;
@@ -84,7 +84,7 @@ document.getElementById("soTien").onclick = function() {
 document.getElementById("chuVi").onclick = function() {
     var dai = document.getElementById("chieuDai").value*1;
     var rong = document.getElementById("chieuRong").value*1;
-    var chuvi = (dai*rong)/2;
+    var chuvi = (dai+rong)*2;
     console.log("Chu vi là: " + chuvi);
     document.getElementById("thongbao4").innerHTML = "Chu vi là: " + chuvi;
 }
